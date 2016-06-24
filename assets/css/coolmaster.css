@@ -41,8 +41,7 @@
   font-family: "Rubik Bold", "Helvetica", sans-serif !important;
   letter-spacing: -1.2em;
   text-align: left;
-  line-height: 1.055em !important;
-  padding-top: 20px; }
+  line-height: 1.055em !important; }
 
 h1.quote {
   max-width: 100%;
@@ -58,6 +57,10 @@ h1.main {
   letter-spacing: -1.2em;
   text-align: center;
   line-height: 1.055em !important; }
+
+h1 div:first-child {
+  color: white !important;
+  background-color: black !important; }
 
 h2 {
   max-width: 750px;

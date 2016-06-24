@@ -6,8 +6,7 @@
     <title>Sheetsee Table Demo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js'></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.3.5/tabletop.min.js"></script>
     <script type='text/javascript' src='https://cdn.rawgit.com/jlord/sheetsee.js/master/js/sheetsee.js'></script>
     <link rel='stylesheet' type='text/css' href='https://cdn.rawgit.com/jlord/sheetsee.js/gh-pages/assets/style.css'>
   </head>
@@ -32,7 +31,6 @@
     <div id="calTable"></div>
     <h1>Pretty Pennies</h1>
     <div id="photogrid"></div>
-    <p><em><a onClick='window.location="view-source:" + window.location.href'>View Source</a> // <a href="../docs/sheetsee-tables.html">View Documentation</a></em></p>
 </div>
 
 <script id="fullTable_template" type="text/html">
@@ -60,7 +58,10 @@
 </script>
 
 <script type="text/javascript">
+
+
   document.addEventListener('DOMContentLoaded', function() {
+
     var URL = "0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc"
     Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
   })

@@ -46,6 +46,7 @@
 
 			for (var i = 0; i < event.currentSlide.children.length ; i++){
 				var tag = event.currentSlide.children[i].localName;
+
 				if (tag == "h1" || tag == "h2" || tag == "h3"){
 					var contentOpenData = $(event.currentSlide.children[i]);
 
@@ -56,12 +57,16 @@
 					TweenLite.set(contentOpenData, {
 						perspective: 700
 					});
-					tl.staggerFrom(contentSplit.words, .5, {
+					tl.staggerFrom(contentSplit.words, .75, {
 						autoAlpha: 0,
-						x: -100,
+						y: 500,
+						rotationX: 180,
+						rotationZ: 90,
+						transformOrigin: "50% top 1000",
 						ease: Power1.easeOutIn
-					}, 0.15);
+					}, 0.5);
 				}
+
 				if (tag == "ul"){
 					for (var p = 0; p < event.currentSlide.children[i].children.length ; p++){
 
