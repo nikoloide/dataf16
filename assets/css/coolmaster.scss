@@ -39,9 +39,15 @@ $origamiColorAlt: #3BFF98;
 $framerColor: #28AFFA;
 $framerColorAlt: #1E2229;
 
+$retroColorOne: #3B5BCA;
+$retroColorTwo: #FF9273;
+$retroColorTree: #6161BB;
+$retroColorFour: #FD6B30;
+$retroColorFive: #9CE7FA;
+
 $headingMargin: 0 0 20px 0;
-$headingFont: 'Nexa Black', Impact, sans-serif;
-$headingColor: $framerColor;
+$headingFont: 'Rubik Bold', Helvetica, sans-serif;
+$headingColor: $retroColorOne;
 $headingLineHeight: 0.8em;
 $headingLetterSpacing: -0.002em;
 $headingLetterSpacingTitle: -0.03em;
@@ -57,10 +63,15 @@ $imageSize: 400;
 $imageHeight: $imageSize * 1.41421356;
 $imageItemXpos: $imageSize * 0.295;
 
+#generative {
+    z-index: -1;
+    position: absolute;
+}
+
 .reveal h1,
 .reveal h2,
 .reveal h3,
-.reveal h4,
+.reveal h4,h1
 .reveal h5,
 .reveal h6 {
     margin: $headingMargin;
@@ -78,6 +89,7 @@ $imageItemXpos: $imageSize * 0.295;
     text-align: left;
     line-height: 1.055em !important;
 }
+
 h1.quote {
     max-width: 100%;
     font-size: 2em;
@@ -98,9 +110,31 @@ h1.main {
 h1 {
     div:first-child {
         color: white !important;
-        background-color: black !important;
+        background-color: $retroColorOne !important;
+        padding: 10px;
     }
 }
+
+[data-state="vamos"] {
+  h1 {
+    color: white !important;
+    div:first-child {
+        color: $retroColorOne !important;
+        background-color: white !important; 
+    }
+  }
+}
+
+.background-content {
+    h1 {
+        color: white !important;
+    }
+}
+
+.slide-background {
+    
+}
+
 
 h2 {
     max-width: 750px;
@@ -249,10 +283,6 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     }
 }
 
-.reveal section {
-        vertical-align: center;
-        max-height: 50px;
-}
 
 .reveal section img {
     margin: 0px;

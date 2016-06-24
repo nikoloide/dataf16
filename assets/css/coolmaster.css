@@ -23,14 +23,18 @@
   font-weight: normal;
   src: url("../fonts/rubik-v2-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/rubik-v2-latin-regular.woff2") format("woff2"), url("../fonts/rubik-v2-latin-regular.woff") format("woff"), url("../fonts/rubik-v2-latin-regular.ttf") format("truetype"), url("../fonts/rubik-v2-latin-regular.svg#Rubik Regular") format("svg"); }
 
+#generative {
+  z-index: -1;
+  position: absolute; }
+
 .reveal h1,
 .reveal h2,
 .reveal h3,
-.reveal h4,
+.reveal h4, h1
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #28AFFA;
+  color: #3B5BCA;
   line-height: 0.8em;
   letter-spacing: -0.002em;
   text-shadow: none; }
@@ -53,14 +57,25 @@ h1.quote {
 h1.main {
   max-width: 100%;
   font-size: 2.3em;
-  font-family: "Nexa Black", Impact, sans-serif !important;
+  font-family: "Rubik Bold", Helvetica, sans-serif !important;
   letter-spacing: -1.2em;
   text-align: center;
   line-height: 1.055em !important; }
 
 h1 div:first-child {
   color: white !important;
-  background-color: black !important; }
+  background-color: #3B5BCA !important;
+  padding: 10px; }
+
+[data-state="vamos"] h1 {
+  color: white !important; }
+
+[data-state="vamos"] h1 div:first-child {
+  color: #3B5BCA !important;
+  background-color: white !important; }
+
+.background-content h1 {
+  color: white !important; }
 
 h2 {
   max-width: 750px;
@@ -149,8 +164,8 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #28AFFA;
-  font-family: "Nexa Black", Impact, sans-serif;
+  color: #3B5BCA;
+  font-family: "Rubik Bold", Helvetica, sans-serif;
   font-weight: normal;
   line-height: 0.8em;
   letter-spacing: -0.002em;
@@ -443,10 +458,6 @@ body {
   width: 70%;
   margin: 0 auto;
   display: block; }
-
-.reveal section {
-  vertical-align: center;
-  max-height: 50px; }
 
 .reveal section img {
   margin: 0px;

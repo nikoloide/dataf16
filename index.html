@@ -22,28 +22,69 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section></section>
 				<section>
-					<h1 class="split-alt">logo</h1>
+					<h1>DATA <br> FEST <br> 2016</h1>
 				</section>
 				<section data-state="presentacion">
 					<div class="icono" id="open-data"></div>
 					<h1 class="titulo"><span>EX,PLO,TAN,DO</span>
 					<br>GOO,GLE
-					<br>SHEETS
+					<br>SPREAD,SHEETS
 					<br>API</h1>
 				</section>
-				<section>
-					<h2>Davo Galavotti</h2>
+				<section data-state="soy">
+					<h1>Davo Galavotti</h1>
+					<h2>@pixelbeat</h2>
 					<h3>Diseñador, (semi) programador</h3>
+					<h3>User Experience, Data Visualization</h3>
+				</section>
+				<section data-state="vamos">
+					<h1>Vamos a aprender a usar mejor Spreadsheets</h1>
 				</section>
 				<section>
 					<h2>Proyectos<br>que<br>usan<br>Google Sheets</h2>
 				</section>
+				<section data-background-color="#ff5a00" data-background-video="assets/video/tmdg.mp4" data-background-video-loop data-background-video-muted class="background-content">
+					<h1>Trimarchi</h1>
+					<h2>Google Forms + <br> CartoDB + <br> D3</h2>
+				</section>
+				<section data-background-color="#333333" data-background-image="assets/images/dashboard.png" class="background-content">
+					<h1>Dashboard_GCBA</h1>
+					<h2>Google Spreadsheets + <br> Sheetrock + <br> Isotope</h2>
+
+				</section>
+				<section data-background-color="#333333" data-background-video="assets/video/datoscopio.mp4" data-background-video-loop data-background-video-muted class="background-content">
+					<h1>Datoscopio_Conurbano</h1>
+					<h2>Google Spreadsheets + <br> Sheetrock + <br> D3</h2>
+				</section>
+				<section data-state="api">
+					<h1>Google Sheets</h1>
+					<h2>Parte de Google Docs</h2>
+				</section>
+				<section data-state="google">
+					<h1>Google Sheets</h1>
+					<h2>Parte de Google Docs</h2>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+					(def lazy-fib
+					  (concat
+					   [0 1]
+					   <mark>((fn rfib [a b]</mark>
+					        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+					    </code>
+					</pre>
+
+				</section>
 			</div>
 		</div>
+		<div id="generative"></div>
 
 		<script src="components/reveal.js/lib/js/head.min.js"></script>
 		<script src="components/reveal.js/js/reveal.js"></script>
+		<script src="components/two/build/two.min.js"></script>
+
 		<script src="assets/js/custom-reveal.js"></script>
 
 		<script>

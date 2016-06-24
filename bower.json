@@ -18,7 +18,8 @@
   "dependencies": {
     "reveal.js": "^3.3.0",
     "gsap": "^1.18.5",
-    "jquery": "^3.0.0"
+    "jquery": "^3.0.0",
+    "two": "^0.6.0"
   },
   "devDependencies": {
     "bourbon": "^4.2.7"
