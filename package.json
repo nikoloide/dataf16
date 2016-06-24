@@ -1,0 +1,20 @@
+{
+  "name": "pixelbeat",
+  "version": "0.0.0",
+  "description": "dependencies",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "connect-livereload": "^0.5.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "opn": "^4.0.2",
+    "tiny-lr": "^0.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

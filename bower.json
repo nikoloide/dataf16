@@ -1,0 +1,26 @@
+{
+  "name": "pixelbeat",
+  "description": "dependencies",
+  "main": "gulpfile.js",
+  "authors": [
+    "Davo <davidgalavotti@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "^3.3.0",
+    "gsap": "^1.18.5",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "bourbon": "^4.2.7"
+  }
+}
