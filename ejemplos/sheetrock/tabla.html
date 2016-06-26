@@ -41,7 +41,7 @@
          <h3>Alquileres en CABA, 2016</h3>
        </div>
       <div class="panel-body">
-        <div id="loading">Cargando datos...</div>
+        <div id="loading">Loading...</div>
         <div class="container-fluid">
           <table class="table table-hover" id="properati"></table>
         </div>
@@ -52,7 +52,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="navbar-text"><a href="https://docs.google.com/spreadsheet/ccc?key=1tPbgHcFoX1snKdCC5NdrRYST5WovHcg6fjfM0_e7kiE&usp=drive_web#gid=1783991526" target="_blank">Google Sheet Público</a></p>
+      <p class="navbar-text"><a href="https://docs.google.com/spreadsheets/d/1oUebPJCR9OCa25w5zAvJv7cE4aMTR-RfIe5y1EIGvcg" target="_blank">Google Sheet Público</a></p>
       <p class="navbar-text navbar-right">Datos provistos por <a href='http://www.properati.com.ar'>Properati</a></p>
     </div>
   </footer>
@@ -70,7 +70,7 @@
 
   $('#properati').sheetrock({
     url: mySpreadsheet,
-    query: "select A,C,D,J,K,O",
+    query: "select C,D,E,J,AR,AS,AT",
     callback: done
   });
 
