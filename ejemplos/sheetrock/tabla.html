@@ -1,83 +1,63 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Sheetsee Demo Tabla</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js'></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.0.1/dist/sheetrock.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-    <style>
-
-      html {
-        position: relative;
-        min-height: 100%;
-      }
-      body {
-        padding-top: 50px;
-        margin-bottom: 60px;
-      }
-
-
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        /* Set the fixed height of the footer here */
-        background-color: #f5f5f5;
-      }
-
-
-    </style>
-  </head>
+<head>
+<meta charset='utf-8'>
+<title>Sheetsee Demo Tabla</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js'></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.0.1/dist/sheetrock.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+html {
+position: relative;
+min-height: 100%;
+}
+body {
+padding-top: 50px;
+margin-bottom: 60px;
+}
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+/* Set the fixed height of the footer here */
+background-color: #f5f5f5;
+}
+</style>
+</head>
 <body>
-  <div class="container">
-    
-    <div class="panel panel-default">
-       <div class="panel-heading">
-         <h1>Sheetrock.js</h1>
-         <h2>Properati</h2>
-         <h3>Alquileres en CABA, Mayo 2016</h3>
-       </div>
-      <div class="panel-body">
-        <div id="loading">Loading...</div>
-        <div class="container-fluid">
-          <table class="table table-hover" id="properati"></table>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="navbar-text"><a href="https://docs.google.com/spreadsheet/ccc?key=1tPbgHcFoX1snKdCC5NdrRYST5WovHcg6fjfM0_e7kiE&usp=drive_web#gid=1783991526" target="_blank">Google Sheet Público</a></p>
-      <p class="navbar-text navbar-right">Datos provistos por <a href='http://www.properati.com.ar'>Properati</a></p>
-    </div>
-  </footer>
-
-
-
-
+<div class="container">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1>Sheetrock.js</h1>
+<h2>Properati</h2>
+<h3>Alquileres en CABA, 2016</h3>
+</div>
+<div class="panel-body">
+<div id="loading">Cargando datos...</div>
+<div class="container-fluid">
+<table class="table table-hover" id="properati"></table>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<p class="navbar-text"><a href="https://docs.google.com/spreadsheet/ccc?key=1tPbgHcFoX1snKdCC5NdrRYST5WovHcg6fjfM0_e7kiE&usp=drive_web#gid=1783991526" target="_blank">Google Sheet Público</a></p>
+<p class="navbar-text navbar-right">Datos provistos por <a href='http://www.properati.com.ar'>Properati</a></p>
+</div>
+</footer>
 <script type="text/javascript">
-
-  var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=1tPbgHcFoX1snKdCC5NdrRYST5WovHcg6fjfM0_e7kiE&usp=drive_web#gid=1783991526';
-
-  var done = function () {
-    $('#loading').fadeOut();
-  };
-
-  $('#properati').sheetrock({
-    url: mySpreadsheet,
-    query: "select A,B,C,D,E,F",
-    callback: done
-  });
-
-
-
-
+var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=1tPbgHcFoX1snKdCC5NdrRYST5WovHcg6fjfM0_e7kiE&usp=drive_web#gid=1783991526';
+var done = function () {
+$('#loading').fadeOut();
+};
+$('#properati').sheetrock({
+url: mySpreadsheet,
+query: "select A,C,D,J,K,O",
+callback: done
+});
 </script>
-
 </body>
 </html>
