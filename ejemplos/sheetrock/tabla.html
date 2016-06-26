@@ -62,7 +62,7 @@
 
 <script type="text/javascript">
 
-  var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1oUebPJCR9OCa25w5zAvJv7cE4aMTR-RfIe5y1EIGvcg/pubhtml';
+  var mySpreadsheet = 'https://docs.google.com/spreadsheet/ccc?key=1tPbgHcFoX1snKdCC5NdrRYST5WovHcg6fjfM0_e7kiE&usp=drive_web#gid=1783991526';
 
   var done = function () {
     $('#loading').fadeOut();
@@ -70,7 +70,7 @@
 
   $('#properati').sheetrock({
     url: mySpreadsheet,
-    query: "select C,D,E,J,AR,AS",
+    query: "select A,B,C,D,E,F",
     callback: done
   });
 
