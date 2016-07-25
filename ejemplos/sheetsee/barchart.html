@@ -1,3 +1,12 @@
+// 1. Code here runs first, before the download starts.
+
+d3.tsv("data.tsv", function(error, data) {
+  // 3. Code here runs last, after the download finishes.
+});
+
+// 2. Code here runs second, while the file is downloading.
+
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
